@@ -6,7 +6,7 @@ GitHub brukernavn: oskher
 
 GitHub repo URL: https://github.com/DATA1700/oblig-2-oskher
 
-URL til Heroku app: 
+URL til Heroku app: https://oblig2-oskher.herokuapp.com/
 
 Fullt navn: Oskar Bråthen Herland
 
