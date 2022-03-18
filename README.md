@@ -1,8 +1,8 @@
 # Oblig X
 
-OsloMet brukernavn: sXXXXXX
+OsloMet brukernavn: s365330
 
-GitHub brukernavn: 
+GitHub brukernavn: oskher
 
 GitHub repo URL: 
 
