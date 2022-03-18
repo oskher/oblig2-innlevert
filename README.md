@@ -13,4 +13,4 @@ Fullt navn: Oskar Bråthen Herland
 Kort beskrivelse av applikasjon (5–10 setninger): 
 samme som oblig 1, lagrer og printer ut kinobilletter. kan også slette kinobilletter. I denne obligen er det lagret på server og printes ut med bootstrap design
 
-Mangler kanskje en mer nøyaktig feilmelding
+Mangler kanskje en kortere kode. inputlagringer er gjort 2 ganger hadde kanskje holdt med 1? 
