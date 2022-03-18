@@ -33,8 +33,8 @@ function registrer(){
         $("#feilmeldingEtternavn").html(ut);
         feilSkrevetInn = true;
     }
-    if (tlfNretFeil === ""){
-        let ut = "Må skrive inn noe i Tlf".fontcolor("red");
+    if (tlfNretFeil === "" || isNaN(Number(tlfNretFeil))){
+        let ut = "Må skrive inn tall i Tlf".fontcolor("red");
         $("#feilmeldingTlf").html(ut);
         feilSkrevetInn = true;
     }
@@ -68,12 +68,12 @@ function registrer(){
     $("#inputEpost").val("");
 
     /* tøm feilmelding */
-    $("#filmFeilmelding").val("");
-    $("#feilmeldingAntall").val("");
-    $("#feilmeldingFornavn").val("");
-    $("#feilmeldingEtternavn").val("");
-    $("#feilmeldingTlf").val("");
-    $("#feilmeldingEpost").val("");
+    $("#filmFeilmelding").html("");
+    $("#feilmeldingAntall").html("");
+    $("#feilmeldingFornavn").html("");
+    $("#feilmeldingEtternavn").html("");
+    $("#feilmeldingTlf").html("");
+    $("#feilmeldingEpost").html("");
 }
 
 function hentAlle(){

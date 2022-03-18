@@ -7,6 +7,9 @@
         select option:first-child{
             display: none;
         }
+        .form-group{
+            display: block;
+        }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
@@ -15,85 +18,50 @@
 </head>
 <body>
 <div class="container">
-    <div class="col-md-4">
+    <div class="row">
+        <div class="col-md-4">
         <h1>Bestilling av kinobilletter</h1>
-        <div class="row">
-                <table>
-                    <tr>
-                        <td><label for="velgFilm">Velg film:</label></td>
-                        <td>
-                            <!--        nb! Lag en value= Velg film-->
-                            <select id="velgFilm">
-                                <option id="0">velg film</option>
-                                <option value="The expendables">The expendables</option>
-                                <option>Pretty little liars</option>
-                                <option>Harry Potter 3</option>
-                                <option>1914</option>
-                            </select>
-                        </td>
-                        <td>
-                            <div id="filmFeilmelding"></div>
-                        </td>
-                    </tr>
-                    <tr><td><br></td></tr>
-                    <tr>
-                        <td>
-                            <label for="inputAntall">Antall: </label>
-                        </td>
-                        <td>
-                            <input type="text" id="inputAntall">
-                        </td>
-                        <td>
-                            <div id="feilmeldingAntall"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="inputForNavn">Fornavn:</label>
-                        </td>
-                        <td>
-                            <input type="text" id="inputForNavn">
-                        </td>
-                        <td>
-                            <div id="feilmeldingFornavn"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="inputEtterNavn">Etternavn: </label>
-                        </td>
-                        <td>
-                            <input type="text" id="inputEtterNavn">
-                        </td>
-                        <td>
-                            <div id="feilmeldingEtternavn"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="inputTlfNr">Telefonnr: </label>
-                        </td>
-                        <td>
-                            <input class="input" type="text" id="inputTlfNr">
-                        </td>
-                        <td>
-                            <div id="feilmeldingTlf"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="inputEpost">Epost: </label>
-                        </td>
-                        <td>
-                            <input type="text" id="inputEpost">
-                        </td>
-                        <td>
-                            <div id="feilmeldingEpost"></div>
-                        </td>
-                    </tr>
+            <form class="form">
+                <div class="form-group">
+                    <label for="velgFilm">Velg film:</label></td>
+                    <select id="velgFilm">
+                        <option id="0">velg film</option>
+                        <option value="The expendables">The expendables</option>
+                        <option>Pretty little liars</option>
+                        <option>Harry Potter 3</option>
+                        <option>1914</option>
+                    </select>
+                    <div id="filmFeilmelding"></div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAntall">Antall: </label>
+                    <input type="text" class="form-control" id="inputAntall">
+                    <div id="feilmeldingAntall"></div>
+                </div>
+                <div class="form-group">
+                    <label for="inputForNavn">Fornavn:</label>
+                    <input type="text" class="form-control"  id="inputForNavn">
+                    <div id="feilmeldingFornavn"></div>
 
-                </table>
-                <button class="btn btn-primary" onclick="registrer()">Kjøp billett</button>
+                </div>
+                <div class="form-group">
+                    <label for="inputEtterNavn">Etternavn: </label>
+                    <input type="text" class="form-control" id="inputEtterNavn">
+                    <div id="feilmeldingEtternavn"></div>
+                </div>
+                <div class="form-group">
+                    <label for="inputTlfNr">Telefonnr: </label>
+                    <input type="text" class="form-control" id="inputTlfNr">
+                    <div id="feilmeldingTlf"></div>
+
+                </div>
+                <div class="form-group">
+                    <label for="inputEpost">Epost: </label>
+                    <input type="text" class="form-control" id="inputEpost">
+                    <div id="feilmeldingEpost"></div>
+                </div>
+            </form>
+            <button class="btn btn-primary" onclick="registrer()">Kjøp billett</button>
         </div>
     </div>
     <div class="col-md-8">
