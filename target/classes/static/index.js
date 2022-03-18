@@ -34,7 +34,7 @@ function registrer(){
         feilSkrevetInn = true;
     }
     if (tlfNretFeil === "" || isNaN(Number(tlfNretFeil))){
-        let ut = "Må skrive inn noe i Tlf".fontcolor("red");
+        let ut = "Må skrive inn tall i Tlf".fontcolor("red");
         $("#feilmeldingTlf").html(ut);
         feilSkrevetInn = true;
     }
